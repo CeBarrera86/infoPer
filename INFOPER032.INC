@@ -1,0 +1,3 @@
+  MODULE('INFOPER032.CLW')
+ArmarDatosLiquidacion  PROCEDURE
+  END

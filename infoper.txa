@@ -1,0 +1,145 @@
+[PROCEDURE]
+NAME DocEmp
+CATEGORY 'Browse'
+[COMMON]
+DESCRIPTION 'perdoc'
+FROM ABC Window
+[DATA]
+CurrentTab                STRING(80)
+[FILES]
+[PRIMARY]
+perdoc
+[INSTANCE]
+1
+[KEY]
+perdoc:perdoc_coddoc
+[PROMPTS]
+%ButtonAction DEPEND %Control STRING TIMES 0
+
+%ButtonRunName DEPEND %Control STRING TIMES 0
+
+%ButtonRunParameters DEPEND %Control STRING TIMES 0
+
+%ButtonProcedure DEPEND %Control PROCEDURE TIMES 0
+
+%ButtonThread DEPEND %Control LONG TIMES 0
+
+%ButtonThreadStack DEPEND %Control @n7 TIMES 0
+
+%ButtonParameters DEPEND %Control STRING TIMES 0
+
+%ButtonRequest DEPEND %Control STRING TIMES 0
+
+%PreLookupKey DEPEND %Control KEY TIMES 0
+
+%PreLookupField DEPEND %Control COMPONENT TIMES 0
+
+%PreLookupProcedure DEPEND %Control PROCEDURE TIMES 0
+
+%PostLookupKey DEPEND %Control KEY TIMES 0
+
+%PostLookupField DEPEND %Control COMPONENT TIMES 0
+
+%PostLookupProcedure DEPEND %Control PROCEDURE TIMES 0
+
+%ForceWindowRefresh DEPEND %Control LONG TIMES 0
+[ADDITION]
+NAME ABC BrowseBox
+[INSTANCE]
+INSTANCE 1
+PROCPROP
+[PROMPTS]
+%AcceptToolbarControl LONG (1)
+%EnableQuickScan LONG  (0)
+
+%LocatorType DEFAULT  ('Step')
+%OverrideDefaultLocator DEFAULT ('')
+%OverrideLocator DEFAULT ('')
+
+%RecordFilter @S255  ('')
+
+%RangeField COMPONENT  ()
+
+%RangeLimitType DEFAULT  ('')
+%RangeLimit FIELD  ()
+%RangeLow FIELD  ()
+%RangeHigh FIELD  ()
+%RangeFile FILE  ()
+%ScrollBehavior DEFAULT  ('Fixed Thumb')
+%SortOrder MULTI LONG  (1)
+%SortCondition DEPEND %SortOrder @S255 TIMES 1
+WHEN  (1) ('CHOICE(?CurrentTab) = 2')
+%SortKey DEPEND %SortOrder KEY TIMES 1
+WHEN  (1) (perdoc:perdoc_emp)
+%SortLocatorType DEPEND %SortOrder DEFAULT TIMES 1
+WHEN  (1) ('Step')
+%SortOverrideDefaultLocator DEPEND %SortOrder DEFAULT TIMES 1
+WHEN  (1) ('')
+%SortOverrideLocator DEPEND %SortOrder DEFAULT TIMES 1
+WHEN  (1) ('')
+%SortRecordFilter DEPEND %SortOrder @S255 TIMES 1
+WHEN  (1) ('')
+%SortRangeField DEPEND %SortOrder COMPONENT TIMES 0 !HOLA 0
+%SortRangeLimit DEPEND %SortOrder FIELD TIMES 1
+WHEN  (1) ()
+%SortRangeLow DEPEND %SortOrder FIELD TIMES 1
+WHEN  (1) ()
+%SortRangeHigh DEPEND %SortOrder FIELD TIMES 1
+WHEN  (1) ()
+%SortRangeFile DEPEND %SortOrder FILE TIMES 1
+WHEN  (1) ()
+%SortRangeLimitType DEPEND %SortOrder DEFAULT TIMES 1
+WHEN  (1) ('')
+%SortScrollBehavior DEPEND %SortOrder DEFAULT TIMES 1
+WHEN  (1) ('Fixed Thumb')
+%SortScrollKeyDistribution DEPEND %SortOrder STRING TIMES 1
+WHEN  (1) ('Runtime')
+%SortCustomKeyDistribution DEPEND %SortOrder MULTI LONG TIMES 0
+%SortKeyDistributionValue DEPEND %SortCustomKeyDistribution @S10 TIMES 1
+WHEN  (1)TIMES 0
+%SortScrollAlpha DEPEND %SortOrder LONG TIMES 1
+WHEN  (1) (1)
+%SortScrollNumeric DEPEND %SortOrder LONG TIMES 1
+WHEN  (1) (0)
+%SortScrollAlt DEPEND %SortOrder LONG TIMES 1
+WHEN  (1) (0)
+[ADDITION]
+NAME ABC BrowseSelectButton
+[INSTANCE]
+INSTANCE 2
+PARENT 1
+[PROMPTS]
+%HideIfDisabled LONG  (1)
+[ADDITION]
+NAME ABC CloseButton
+[INSTANCE]
+INSTANCE 3
+[ADDITION]
+NAME ABC HelpButton
+[INSTANCE]
+INSTANCE 4
+[ADDITION]
+NAME ABC WindowResize
+[INSTANCE]
+INSTANCE 5
+[PROMPTS]
+%UseAppStrategy    DEFAULT (1)
+%AppStrategy       DEFAULT ('Surface')
+%RestrictMinSize   DEFAULT (1)
+%WindowMinWidth    DEFAULT (0)
+%WindowMaxWidth    DEFAULT (0)
+[WINDOW]
+QuickWindow WINDOW('perdoc'),AT(,,260,198),IMM,RESIZE,GRAY,MDI,HLP('DocEmp'),FONT('Microsoft Sans Serif',8,,400,1),CENTER,SYSTEM
+    LIST,AT(8,30,244,124),USE(?Browse:1),MSG('perdoc'),IMM,HVSCROLL,|
+      FORMAT('36R(2)|M~emp~C(0)@n-7@64R(2)|M~nroleg~C(0)@n-14@16R(2)|M~id~C(0)@n3@28L(2)|M~coddoc~L(2)@s4@64R(2)|M~nrodoc~C(0)@n-14@44L(2)|M~exped~L(2)@s10@'),|
+      FROM(Queue:Browse:1),#SEQ(1),#ORIG(?List),#FIELDS(perdoc:emp,perdoc:nroleg,perdoc:id,perdoc:coddoc,perdoc:nrodoc,perdoc:exped)
+    BUTTON('&Select'),AT(203,158,49,14),USE(?Select:2),ICON('WASELECT.ICO'),FLAT,MSG('Select the Record'),TIP('Select the Record'),LEFT,#SEQ(2),#ORIG(?Select)
+  SHEET,AT(4,4,252,172),USE(?CurrentTab),#ORIG(CurrentTab)
+    TAB('&1) perdoc_coddoc'),USE(?Tab:2)
+    END
+    TAB('&2) perdoc_emp'),USE(?Tab:3)
+    END
+  END
+  BUTTON('&Close'),AT(154,180,49,14),USE(?Close),ICON('WACLOSE.ICO'),FLAT,MSG('Close Window'),TIP('Close Window'),LEFT,#SEQ(3),#ORIG(?Close)
+  BUTTON('&Help'),AT(207,180,49,14),USE(?Help),ICON('WAHELP.ICO'),FLAT,MSG('See Help Window'),TIP('See Help Window'),LEFT,STD(STD:Help),#SEQ(4),#ORIG(?Help)
+ END

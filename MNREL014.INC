@@ -1,0 +1,3 @@
+  MODULE('MNREL014.CLW')
+ABM_Emplea             PROCEDURE
+  END

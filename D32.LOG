@@ -1,0 +1,175 @@
+Started 
+Heap handle: 07340000
+start process C:\Proyectos_Clarion\InfoPer\InfoPer.exe
+Command line :> "C:\Clarion10\bin\Cladb.exe"  -s Release  -c "C:\Users\sistemas\AppData\Roaming\SoftVelocity\Clarion\10.0"  "C:\Proyectos_Clarion\InfoPer\InfoPer.exe" 
+Command line :> "C:\Proyectos_Clarion\InfoPer\InfoPer.exe" 
+Redirection file :> 
+CREATE_PROCESS_DEBUG_EVENT  ! No image name found
+g.debug_name C:\Proyectos_Clarion\InfoPer\InfoPer.exe
+BaseOfImage                00400000
+CREATE_PROCESS_DEBUG_EVENT: process main thread tid=00001FD4
+thread handle=0000060C
+ntdll.dll Loaded at: 76EA0000
+No debug information
+KERNEL32.dll Loaded at: 75870000
+No debug information
+KERNELBASE.dll Loaded at: 76B90000
+No debug information
+CREATE_THREAD_DEBUG_EVENT: tid=00003288
+thread handle=00000600
+CREATE_THREAD_DEBUG_EVENT: tid=0000271C
+thread handle=00000604
+CREATE_THREAD_DEBUG_EVENT: tid=0000312C
+thread handle=0000061C
+USER32.dll Loaded at: 75600000
+No debug information
+ClaASC.dll Loaded at: 008E0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 008E0000
+ClaDOS.dll Loaded at: 00920000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00920000
+ClaBAS.dll Loaded at: 00900000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00900000
+ClaMEM.dll Loaded at: 02330000
+No debug information
+win32u.dll Loaded at: 76240000
+No debug information
+claevo.dll Loaded at: 00C50000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+ClaMSS.dll Loaded at: 008E0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 008E0000
+ClaOLE.dll Loaded at: 00910000
+No debug information
+ClaODB.dll Loaded at: 00C50000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+GDI32.dll Loaded at: 76260000
+No debug information
+ADVAPI32.dll Loaded at: 75960000
+No debug information
+CLAQPLLT.dll Loaded at: 008E0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 008E0000
+ClaRUN.dll Loaded at: 01000000
+WslDb$$NotifyDebugger 010DD388
+msvcrt.dll Loaded at: 75140000
+No debug information
+CLAWE.dll Loaded at: 13200000
+gdi32full.dll Loaded at: 76DB0000
+No debug information
+ole32.dll Loaded at: 74DD0000
+No debug information
+SECHOST.dll Loaded at: 75480000
+No debug information
+msvcp_win.dll Loaded at: 76290000
+No debug information
+COMDLG32.dll Loaded at: 76510000
+No debug information
+ucrtbase.dll Loaded at: 00C50000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+RPCRT4.dll Loaded at: 76310000
+No debug information
+ucrtbase.dll Loaded at: 752E0000
+No debug information
+ucrtbase.dll Loaded at: 00C50000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+OLEAUT32.dll Loaded at: 75500000
+No debug information
+combase.dll Loaded at: 00C50000
+No debug information
+combase.dll Loaded at: 75FA0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+Imgxcor5.dll Loaded at: 00C50000
+No debug information
+SHCORE.dll Loaded at: 76430000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00C50000
+MPR.dll Loaded at: 6DD50000
+No debug information
+SHLWAPI.dll Loaded at: 75280000
+No debug information
+SHELL32.dll Loaded at: 759E0000
+No debug information
+COMCTL32.dll Loaded at: 5E0B0000
+No debug information
+WINMM.dll Loaded at: 618E0000
+No debug information
+oledlg.dll Loaded at: 6DD20000
+No debug information
+WINSPOOL.DRV Loaded at: 70680000
+No debug information
+ClaASC.dll Loaded at: 008E0000
+No debug information
+ClaDOS.dll Loaded at: 00930000
+No debug information
+ClaBAS.dll Loaded at: 00C50000
+No debug information
+ClaMSS.dll Loaded at: 00F10000
+No debug information
+claevo.dll Loaded at: 00C70000
+No debug information
+ClaODB.dll Loaded at: 00F60000
+No debug information
+Imgxcor5.dll Loaded at: 011A0000
+No debug information
+CLAQPLLT.dll Loaded at: 00900000
+No debug information
+PXCLIB30.DLL Loaded at: 10000000
+No debug information
+XCPRO30.DLL Loaded at: 00FB0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00FB0000
+xccdx30.dll Loaded at: 01440000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 01440000
+ixclib30.dll Loaded at: 014D0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 014D0000
+dscrt30.dll Loaded at: 00FB0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00FB0000
+VERSION.dll Loaded at: 74BF0000
+No debug information
+WININET.dll Loaded at: 64380000
+No debug information
+AVIFIL32.dll Loaded at: 5E610000
+No debug information
+MSACM32.dll Loaded at: 65640000
+No debug information
+MSVFW32.dll Loaded at: 594B0000
+No debug information
+MSVFW32.dll Loaded at: 00FB0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00FB0000
+WINMMBASE.dll Loaded at: 65620000
+No debug information
+WINMMBASE.dll Loaded at: 00FB0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 00FB0000
+XCPRO30.DLL Loaded at: 00FB0000
+No debug information
+ixclib30.dll Loaded at: 014D0000
+No debug information
+xccdx30.dll Loaded at: 01440000
+No debug information
+dscrt30.dll Loaded at: 015C0000
+No debug information
+dscrt30.dll Loaded at: 01590000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 015C0000
+xcpars30.dll Loaded at: 015C0000
+No debug information
+UNLOAD_DLL_DEBUG_EVENT: BaseOfDll 015C0000
+xcpars30.dll Loaded at: 015C0000
+No debug information
+IMM32.dll Loaded at: 750A0000
+No debug information
+MSIMG32.dll Loaded at: 6DE90000
+No debug information

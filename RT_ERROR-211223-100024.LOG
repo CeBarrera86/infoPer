@@ -1,0 +1,39 @@
+
+
+Clarion modules:
+08DE0000  10.00:11834 C:\Clarion10\bin\ClaRUN.dll
+08DB0000  10.00:11834 C:\Clarion10\bin\ClaIde.dll
+007E0000  10.00:11834 C:\Clarion10\bin\ClaASC.dll
+007C0000  10.00:11834 C:\Clarion10\bin\ClaDOS.dll
+12170000  10.00:11834 C:\Clarion10\bin\ClaDEF.dll
+00790000  10.00:11834 C:\Clarion10\bin\ClaTPS.dll
+11FA0000  10.00:11834 C:\Clarion10\bin\ClaCBC.dll
+120F0000  10.00:11834 C:\Clarion10\bin\Claasl.dll
+11190000  10.00:11834 C:\Clarion10\bin\ClaAPP.dll
+10FE0000  10.00:11834 C:\Clarion10\bin\Clagen.dll
+111B0000  10.00:11834 C:\Clarion10\bin\clatpls.dll
+22930000  10.00:11834 C:\Clarion10\bin\ClaDSI.DLL
+226F0000  10.00:11834 C:\Clarion10\bin\Cladct.dll
+22BA0000  10.00:11834 C:\Clarion10\bin\ClaPRJ.DLL
+005A0000  10.00:11834 C:\Clarion10\bin\Clamss.dll
+004C0000  10.00:11834 C:\Clarion10\bin\Clasca.dll
+128E0000  10.00:11834 C:\Clarion10\bin\ClaBASS.DLL
+00830000  10.00:11834 C:\Clarion10\bin\ClaBTR.dll
+13030000  10.00:11834 C:\Clarion10\bin\ClaBTRS.DLL
+12D50000  10.00:11834 C:\Clarion10\bin\ClaCLAS.DLL
+12DE0000  10.00:11834 C:\Clarion10\bin\ClaCLPS.DLL
+12E00000  10.00:11834 C:\Clarion10\bin\ClaDB3S.DLL
+12E50000  10.00:11834 C:\Clarion10\bin\ClaDB4S.DLL
+12EB0000  10.00:11834 C:\Clarion10\bin\ClaFOXS.DLL
+14BB0000  10.00:11834 C:\Clarion10\bin\ClaMSSS.DLL
+123A0000  10.00:11834 C:\Clarion10\bin\ClaODBCS.DLL
+00890000  10.00:11834 C:\Clarion10\bin\ClaORA.dll
+123C0000  10.00:11834 C:\Clarion10\bin\ClaORAS.DLL
+12530000  10.00:11834 C:\Clarion10\bin\ClaSCAS.DLL
+1D130000  10.00:11834 C:\Clarion10\bin\ClaSQA.dll
+12550000  10.00:11834 C:\Clarion10\bin\ClaSQAS.DLL
+1D180000  10.00:11834 C:\Clarion10\bin\ClaLit.dll
+16BA0000  10.00:11834 C:\Clarion10\bin\ClaLitS.DLL
+13050000  10.00:11834 C:\Clarion10\bin\ClaTPSS.DLL
+
+Thread stack:

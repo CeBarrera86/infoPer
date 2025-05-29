@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Clarion 2.1.0.2447
+Project("{12B76EC0-1D7B-4FA7-A7D0-C524288B48A1}") = "MnRel", "MnRel.cwproj", "{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{{2150E333-8FDC-42A3-9474-1A3956D46DE8}}"
+	ProjectSection(SolutionItems) = postProject
+		MnRel.app = MnRel.app
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}.Debug|Win32.Build.0 = Debug|Win32
+		{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}.Release|Win32.Build.0 = Release|Win32
+		{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+EndGlobal

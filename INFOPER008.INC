@@ -1,0 +1,3 @@
+  MODULE('INFOPER008.CLW')
+LPLegajo               PROCEDURE
+  END

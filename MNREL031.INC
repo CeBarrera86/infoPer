@@ -1,0 +1,3 @@
+  MODULE('MNREL031.CLW')
+IngresoHHMM            FUNCTION(),SHORT
+  END

@@ -1,0 +1,164 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CE60B498-1F50-41CC-9260-19B7B8C2EFBC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>infoper</AssemblyName>
+    <OutputName>InfoPer</OutputName>
+    <ApplicationIcon>personal.ico</ApplicationIcon>
+    <DefineConstants>_QPLLiteDllMode_=&gt;1%3b_QPLLiteLinkMode_=&gt;0%3b_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1%3b_SUPERSECURITYDllMode_=&gt;0%3b_SUPERSECURITYLinkMode_=&gt;1%3b_SUPERSYNCDllMode_=&gt;0%3b_SUPERSYNCLinkMode_=&gt;1</DefineConstants>
+    <Model>Dll</Model>
+    <stack_size>16384</stack_size>
+    <CopyCore>True</CopyCore>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+    <warnings>on</warnings>
+    <GenerateMap>True</GenerateMap>
+    <line_numbers>False</line_numbers>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="EFOCUS.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="INFO%24SEC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper003.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper005.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper006.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper007.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper008.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper009.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper010.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper011.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper012.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper013.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper014.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper015.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper016.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper017.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper018.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper019.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper020.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper021.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper022.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper023.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper024.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper025.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper026.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper027.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper028.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="INFOPER_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper_BC1.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper_BC2.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="infoper_BC3.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <None Include="Imgxcor5.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FileDriver Include="ASCII" />
+    <FileDriver Include="BASIC" />
+    <FileDriver Include="DOS" />
+    <FileDriver Include="MEMORY" />
+    <FileDriver Include="MSSQL" />
+    <FileDriver Include="ODBC" />
+    <Library Include="ClaDOS.lib" />
+    <Library Include="Claevo.lib" />
+    <Library Include="ClaOLE.lib" />
+    <Library Include="CLAQPLLT.LIB" />
+    <Library Include="CLAWE.Lib" />
+    <Library Include="IMGXCOR5.LIB" />
+    <Library Include="no.ICO" />
+    <Library Include="total.ICO" />
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>

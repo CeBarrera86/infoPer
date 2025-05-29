@@ -1,0 +1,12 @@
+Error: memory block free'd twice
+08E68B53  0001:00087B53 ClaRUN.dll
+73462DD6  0002:00022DD6 mscorlib.ni.dll
+73488604  0002:00048604 mscorlib.ni.dll
+73488537  0002:00048537 mscorlib.ni.dll
+734884F4  0002:000484F4 mscorlib.ni.dll
+73462D0E  0002:00022D0E mscorlib.ni.dll
+745AF066  0001:0000E066 clr.dll
+745B230A  0001:0001130A clr.dll
+745B85CB  0001:000175CB clr.dll
+746C9687  0001:00128687 clr.dll
+----------------------------------

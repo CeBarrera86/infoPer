@@ -1,0 +1,145 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FA7C95F7-FFB2-4DC6-BC73-9CFC442B6B36}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MnRel</AssemblyName>
+    <OutputName>MNREL</OutputName>
+    <DefineConstants>_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1</DefineConstants>
+    <Model>Lib</Model>
+    <StartArguments>11341 DEVELOPER</StartArguments>
+    <ApplicationIcon>mnrel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <Library Include="Claevol.Lib" />
+    <Library Include="ClaOLEl.lib" />
+    <Library Include="mapi32.lib" />
+    <Library Include="no.ICO" />
+    <Library Include="total.ICO" />
+    <FileDriver Include="ASCII" />
+    <FileDriver Include="Btrieve" />
+    <FileDriver Include="MSSQL" />
+    <Compile Include="MnRel.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel003.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel005.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel006.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel007.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel008.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel009.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel010.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel011.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel012.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel013.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel014.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel015.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel016.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel017.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel018.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel019.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel020.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel021.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel022.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel023.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel024.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel025.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel026.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel027.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel028.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel029.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel030.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel031.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel032.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MNREL_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="MnRel_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>

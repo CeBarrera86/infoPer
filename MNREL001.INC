@@ -1,0 +1,2 @@
+  MODULE('MNREL001.CLW')
+  END

@@ -1,0 +1,3 @@
+  MODULE('INFOPER031.CLW')
+ArmarDatosRecaudacion  PROCEDURE
+  END

@@ -1,0 +1,3 @@
+  MODULE('INFOPER011.CLW')
+LJAlpha                PROCEDURE
+  END
